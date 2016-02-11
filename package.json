@@ -1,43 +1,47 @@
 {
-  "name": "npm-es2015-starter",
-  "babel": {
-    "presets": [
-      "stage-2"
-    ]
-  },
-  "version": "0.3.0",
+  "name": "default-name",
+  "files": [
+    "lib"
+  ],
+  "version": "0.0.0",
   "description": "",
   "main": "lib/index.js",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.4.5",
-    "babel-preset-stage-2": "^6.3.13",
-    "eslint-config-georgebonnr": "^1.1.0",
     "babel-eslint": "^4.1.0",
+    "babel-preset-es2015-node5": "^1.1.2",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
     "eslint": "^1.7.1",
+    "eslint-config-georgebonnr": "^1.1.0",
     "eslint-plugin-react": "^3.6.3",
     "rimraf": "^2.5.1"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
+    "lint": "eslint src test",
     "clean": "rimraf lib dist coverage",
     "preversion": "npm run clean",
     "version": "npm run build",
     "postversion": "git push && git push --tags && npm run clean",
     "prepublish": "npm run clean && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/georgebonnr/npm-es2015-starter.git"
+    "url": "git+https://github.com/georgebonnr/default-name.git"
   },
   "keywords": [
-    "es2015"
+    "node",
+    "react",
+    "es2015",
+    "eslint"
   ],
   "author": "George Bonner <georgebonnr@gmail.com> (http://georgebonnr.com)",
   "bugs": {
-    "url": "https://github.com/georgebonnr/npm-es2015-starter/issues"
+    "url": "https://github.com/georgebonnr/default-name/issues"
   },
-  "homepage": "https://github.com/georgebonnr/npm-es2015-starter#readme"
+  "homepage": "https://github.com/georgebonnr/default-name#readme"
 }
