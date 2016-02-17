@@ -24,7 +24,7 @@
     "lint": "eslint src test",
     "clean": "rimraf lib dist coverage",
     "preversion": "npm run clean",
-    "version": "npm run build",
+    "version": "npm run lint && npm run build",
     "postversion": "git push && git push --tags && npm run clean",
     "prepublish": "npm run clean && npm run build",
     "test": "npm run lint"
