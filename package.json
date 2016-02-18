@@ -23,8 +23,8 @@
     "build": "babel src --out-dir lib",
     "lint": "eslint src test",
     "clean": "rimraf lib dist coverage",
-    "preversion": "npm run clean",
-    "version": "npm run lint && npm run build",
+    "preversion": "npm run lint && git push",
+    "version": "npm run clean && npm run build",
     "postversion": "git push && git push --tags && npm run clean",
     "prepublish": "npm run clean && npm run build",
     "test": "npm run lint"
