@@ -1,7 +1,11 @@
-Boilerplate for developing small npm modules with ES2015. Borrows heavily from the folks at rackt.
+memoized numeral for simple input -> output cases.
 
-1. Develop in ES6.
+#usage:
 
-2. `npm version [patch|minor|major]`
+```javascript
+import memoizedNumeral from 'memoized-numeral'
 
-3. `npm publish`
+memoizedNumeral(5, '$0[.]00')
+```
+
+* accepts same formatting as numeral
