@@ -1,5 +1,5 @@
 {
-  "name": "fix-me",
+  "name": "memoized-numeral",
   "files": [
     "lib"
   ],
@@ -31,17 +31,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/georgebonnr/fix-me.git"
+    "url": "git+https://github.com/georgebonnr/memoized-numeral.git"
   },
   "keywords": [
     "node",
-    "react",
+    "numeral",
     "es2015",
     "eslint"
   ],
   "author": "George Bonner <georgebonnr@gmail.com> (http://georgebonnr.com)",
   "bugs": {
-    "url": "https://github.com/georgebonnr/fix-me/issues"
+    "url": "https://github.com/georgebonnr/memoized-numeral/issues"
   },
-  "homepage": "https://github.com/georgebonnr/fix-me#readme"
+  "homepage": "https://github.com/georgebonnr/memoized-numeral#readme"
 }
