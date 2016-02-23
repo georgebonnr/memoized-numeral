@@ -7,7 +7,11 @@
   "description": "",
   "main": "lib/index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "all-args-to-string": "0.0.1",
+    "lodash.memoize": "^4.0.0",
+    "numeral": "^1.5.3"
+  },
   "devDependencies": {
     "babel-cli": "^6.4.5",
     "babel-eslint": "^4.1.0",
